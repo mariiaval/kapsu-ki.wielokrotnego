@@ -1,0 +1,1 @@
+# kapsu-ki.wielokrotnego
