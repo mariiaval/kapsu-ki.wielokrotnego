@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #218838;
+}
+
+/* Products Section */
+.products {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.products .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.product .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product .btn:hover {
+    background-color: #218838;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.benefits h2 {
+    margin-bottom: 3rem;
+}
+
+.benefits .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit {
+    width: 30%;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.benefit h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.benefit p {
+    font-size: 1.1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    margin-bottom: 3rem;
+}
+
+.testimonials .testimonial {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-left: 5px solid #28a745;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.testimonials .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Order Form */
+.order-form {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.order-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.order-form input, .order-form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form button {
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-form button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .products .row {
+        flex-direction: column;
+    }
+
+    .product, .benefit {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+}
